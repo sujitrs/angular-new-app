@@ -6,6 +6,7 @@ templateUrl:'./server.component.html'
 export class ServerComponent{
     ID=1;
     Status="Online";
+    Name;
 
     toggle(){
         if(this.Status=="Online"){
@@ -13,6 +14,10 @@ export class ServerComponent{
         }else{
             this.Status="Online";
         }
-        return;
+       // return;
+    }
+
+    OnChange(event:Event){
+this.Name=(<HTMLInputElement>event.target).value;
     }
 }
