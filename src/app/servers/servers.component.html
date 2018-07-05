@@ -1,2 +1,5 @@
-<server-app></server-app>
-<server-app></server-app>
+<button class="btn btn-primary" (click)="addServer()">Add Server</button>
+<hr>
+
+<server-app *ngFor="let server of servers"></server-app>
+<!-- <server-app></server-app> -->
